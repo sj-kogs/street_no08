@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flow Pick Tablet is a tablet app for observing water surface velocity. Explore a concept demonstration.">
+  <meta name="theme-color" content="#f6f9fb">
+  <title>Flow Pick Tablet — See the speed of water</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main" data-copy="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="./assets/mark.svg" width="32" height="32" alt="">
+        <span>Flow Pick <em>Tablet</em></span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation" data-label="navigation">
+        <a href="#experience" data-copy="navExperience">Experience</a>
+        <a href="#demo" data-copy="navDemo">Flow demo</a>
+        <a href="#uses" data-copy="navUses">Use cases</a>
+      </nav>
+      <div class="language" role="group" aria-label="Language" data-label="language">
+        <button type="button" data-language="en" aria-pressed="true" aria-label="English" lang="en">EN</button>
+        <button type="button" data-language="ko" aria-pressed="false" aria-label="한국어" lang="ko">KR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <h1 id="hero-title">
+          <span data-copy="heroTitleFirst">See the speed</span>
+          <span class="accent" data-copy="heroTitleSecond">of water.</span>
+        </h1>
+        <p class="hero-description" data-copy="heroDescription">Measure water surface velocity with a tablet.<br>A new perspective on rivers, streams, and channels.</p>
+        <a class="button button-primary" href="#experience" data-copy="heroCta">Explore the experience</a>
+        <figure class="hero-figure">
+          <div class="tablet">
+            <div class="tablet-screen">
+              <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" fetchpriority="high" alt="A rippling river seen from above" data-alt="riverAlt">
+              <svg class="flow-overlay hero-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
+            </div>
+          </div>
+          <figcaption data-copy="heroCaption">Illustrative product concept</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap experience-grid">
+        <figure class="field-figure">
+          <img data-image="field" src="./assets/images/river-field.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="A person holding a tablet on a gravel riverbank" data-alt="fieldAlt">
+          <figcaption data-copy="fieldCaption">Illustrative field scene</figcaption>
+        </figure>
+        <div class="experience-copy">
+          <p class="eyebrow" data-copy="fieldKicker">At the water’s edge</p>
+          <h2 id="experience-title" data-copy="fieldTitle">Less gear.<br>More room to explore.</h2>
+          <p data-copy="fieldDescription">Equipment setup, transport, and access to the water can take time. Flow Pick Tablet brings surface velocity measurement to a familiar device you can carry to the riverbank.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section" aria-labelledby="values-title">
+      <div class="wrap">
+        <div class="section-intro values-intro">
+          <h2 id="values-title" data-copy="valuesTitle">A familiar device.<br>A new field tool.</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 15c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M2 20c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M12 3v6m-3-3 3 3 3-3"/></svg>
+            </span>
+            <h3 data-copy="valueContactTitle">Non-contact</h3>
+            <p data-copy="valueContactText">Observe the water’s surface from the bank.</p>
+          </article>
+          <article class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m-13 5c5 3 13 3 18 0"/></svg>
+            </span>
+            <h3 data-copy="valuePortableTitle">Portable</h3>
+            <p data-copy="valuePortableText">Carry a tablet from one observation point to the next.</p>
+          </article>
+          <article class="value">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 16h6"/><circle cx="12" cy="10" r="2.25"/></svg>
+            </span>
+            <h3 data-copy="valueTabletTitle">Tablet-based</h3>
+            <p data-copy="valueTabletText">Use the tablet’s built-in camera to capture the moving surface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap demo-layout">
+        <div class="section-intro demo-intro">
+          <p class="eyebrow" data-copy="demoKicker">Interactive demo</p>
+          <h2 id="demo-title" data-copy="demoTitle">Follow the flow.</h2>
+          <p data-copy="demoDescription">Start with one line along the direction of the current. Add two more to see how the demo represents surface velocity along each line.</p>
+        </div>
+        <div class="demo-card">
+          <div class="demo-toolbar">
+            <fieldset class="line-picker">
+              <legend class="sr-only" data-copy="linePicker">Number of reference lines</legend>
+              <label>
+                <input type="radio" name="lines" value="1" checked>
+                <span data-copy="singleLine">One line</span>
+              </label>
+              <label>
+                <input type="radio" name="lines" value="3">
+                <span data-copy="multipleLines">Three lines</span>
+              </label>
+            </fieldset>
+            <button class="button demo-button" id="flow-toggle" type="button" aria-controls="demo-scene" aria-describedby="demo-note" data-copy="showFlow">Show flow</button>
+          </div>
+          <figure class="demo-figure">
+            <div class="demo-scene" id="demo-scene">
+              <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="A rippling river seen from above" data-alt="riverAlt">
+              <svg id="demo-overlay" class="flow-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
+            </div>
+            <figcaption class="demo-caption">
+              <span id="demo-note" data-copy="demoNote">Visual demo · Not a live measurement</span>
+              <span class="demo-legend" aria-hidden="true">
+                <span class="legend-item"><i class="legend-line"></i><span data-copy="legendLine">Reference line</span></span>
+                <span class="legend-item" id="vector-legend" hidden><i class="legend-vector"></i><span data-copy="legendVector">Velocity vector</span></span>
+              </span>
+            </figcaption>
+          </figure>
+          <p id="demo-status" class="sr-only" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="uses section" id="uses" aria-labelledby="uses-title">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="eyebrow" data-copy="usesKicker">Use cases</p>
+          <h2 id="uses-title" data-copy="usesTitle">From the field<br>to the classroom.</h2>
+        </div>
+        <div class="uses-grid">
+          <article class="use">
+            <img data-image="field" src="./assets/images/river-field.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="A person holding a tablet on a gravel riverbank" data-alt="fieldAlt">
+            <div class="use-copy">
+              <h3 data-copy="useFieldTitle">Field surveys</h3>
+              <p data-copy="useFieldText">Observe how surface flow varies across a reach of a river or channel.</p>
+            </div>
+          </article>
+          <article class="use">
+            <img data-image="study" src="./assets/images/river-study.jpg" width="850" height="567" loading="lazy" decoding="async" alt="Two students compare notes beside a shallow stream" data-alt="studyAlt">
+            <div class="use-copy">
+              <h3 data-copy="useStudyTitle">Research &amp; education</h3>
+              <p data-copy="useStudyText">Connect hydraulics lessons with field observations of surface velocity.</p>
+            </div>
+          </article>
+          <article class="use">
+            <img data-image="curiosity" src="./assets/images/river-curiosity.jpg" width="850" height="478" loading="lazy" decoding="async" alt="A visitor looks at the current from a riverside path" data-alt="curiosityAlt">
+            <div class="use-copy">
+              <h3 data-copy="useCuriosityTitle">Everyday curiosity</h3>
+              <p data-copy="useCuriosityText">Take a closer look at how water moves through a familiar stream.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section" aria-labelledby="closing-title">
+      <div class="wrap closing-inner">
+        <div class="closing-copy">
+          <h2 id="closing-title" data-copy="closingTitle">Ready to see<br>flow differently?</h2>
+          <a class="button button-primary" id="closing-cta" href="#demo" data-copy="closingCta">Try the flow demo</a>
+        </div>
+        <div class="tablet closing-tablet" aria-hidden="true">
+          <div class="tablet-screen">
+            <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="">
+            <svg class="flow-overlay closing-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top">
+        <img src="./assets/mark.svg" width="32" height="32" alt="">
+        <span>Flow Pick <em>Tablet</em></span>
+      </a>
+      <p data-copy="footerStatus">Promotional prototype · Product validation in progress</p>
+      <a class="back-link" href="#top" data-copy="backTop">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
