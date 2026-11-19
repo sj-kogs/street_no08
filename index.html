@@ -21,7 +21,7 @@
         <span>Flow Pick <em>Tablet</em></span>
       </a>
       <nav class="primary-nav" aria-label="Main navigation" data-label="navigation">
-        <a href="#experience" data-copy="navExperience">Experience</a>
+        <a href="#product" data-copy="navExperience">Product</a>
         <a href="#demo" data-copy="navDemo">Flow demo</a>
         <a href="#uses" data-copy="navUses">Use cases</a>
       </nav>
@@ -33,18 +33,69 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero" aria-labelledby="hero-title">
+    <div class="opening-story">
+      <div class="opening-backdrop" aria-hidden="true">
+        <div class="opening-water">
+          <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" fetchpriority="high" alt="">
+        </div>
+      </div>
+      <section class="river-opening" aria-labelledby="river-title">
+        <div class="wrap river-opening-copy">
+          <h1 id="river-title" data-copy="riverTitle">How does water flow?</h1>
+          <a class="button river-button" href="#water-study" data-copy="riverCta">See Leonardo’s sketch</a>
+        </div>
+      </section>
+
+      <section class="gallery-opening section" id="water-study" aria-labelledby="gallery-title">
+        <div class="wrap gallery-layout">
+          <figure class="gallery-art">
+            <div class="gallery-frame">
+              <img data-image="leonardo" src="./assets/images/leonardo-studies-of-water.jpg" width="701" height="1004" decoding="async" alt="Leonardo’s ink studies of water flowing past obstacles and swirling into a pool" data-alt="galleryAlt">
+            </div>
+            <figcaption>
+              <span data-copy="galleryCredit">Leonardo da Vinci · c. 1510–1512</span>
+              <a href="https://commons.wikimedia.org/wiki/File:Leonardo_da_vinci,_Studies_of_water.jpg" data-copy="gallerySource">Image source</a>
+            </figcaption>
+          </figure>
+          <div class="gallery-copy">
+            <h2 id="gallery-title" data-copy="galleryTitle">Studies of Water</h2>
+            <p data-copy="galleryDescription">Leonardo da Vinci watched water rush past obstacles and curl into eddies. He traced those movements in ink.</p>
+            <a class="button gallery-button" href="#water-today" data-copy="galleryCta">See the flow today</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="story-today section" id="water-today" aria-labelledby="today-title">
+      <div class="wrap today-layout">
+        <div class="section-intro today-copy">
+          <p class="eyebrow" data-copy="todayTime">More than 500 years later</p>
+          <h2 id="today-title" data-copy="todayTitle">From sketch to measurement.</h2>
+          <p data-copy="todayDescription">By analyzing video of a river’s surface, we can show how fast the water is moving along lines drawn in the direction of the current.</p>
+          <a class="button button-primary" href="#product" data-copy="todayCta">Meet Flow Pick Tablet</a>
+        </div>
+        <figure class="story-measurement">
+          <div class="demo-scene">
+            <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="A rippling river seen from above" data-alt="riverAlt">
+            <svg class="flow-overlay story-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
+          </div>
+          <figcaption data-copy="demoNote">Visual demo · Simulated readings</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="hero section" id="product" aria-labelledby="hero-title">
       <div class="wrap hero-inner">
-        <h1 id="hero-title">
+        <h2 class="hero-heading" id="hero-title">
           <span data-copy="heroTitleFirst">See the speed</span>
           <span class="accent" data-copy="heroTitleSecond">of water.</span>
-        </h1>
+        </h2>
         <p class="hero-description" data-copy="heroDescription">Measure water surface velocity with a tablet.<br>A new perspective on rivers, streams, and channels.</p>
         <a class="button button-primary" href="#experience" data-copy="heroCta">Explore the experience</a>
         <figure class="hero-figure">
           <div class="tablet">
             <div class="tablet-screen">
-              <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" fetchpriority="high" alt="A rippling river seen from above" data-alt="riverAlt">
+              <img data-image="river" src="./assets/images/river-demo.jpg" width="1672" height="941" loading="lazy" decoding="async" alt="A rippling river seen from above" data-alt="riverAlt">
               <svg class="flow-overlay hero-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
             </div>
           </div>
@@ -103,7 +154,7 @@
         <div class="section-intro demo-intro">
           <p class="eyebrow" data-copy="demoKicker">Interactive demo</p>
           <h2 id="demo-title" data-copy="demoTitle">Follow the flow.</h2>
-          <p data-copy="demoDescription">Start with one line along the direction of the current. Add two more to see how the demo represents surface velocity along each line.</p>
+          <p data-copy="demoDescription">Start with one line along the current. Switch to five lines to compare surface speeds across the river.</p>
         </div>
         <div class="demo-card">
           <div class="demo-toolbar">
@@ -114,8 +165,8 @@
                 <span data-copy="singleLine">One line</span>
               </label>
               <label>
-                <input type="radio" name="lines" value="3">
-                <span data-copy="multipleLines">Three lines</span>
+                <input type="radio" name="lines" value="5">
+                <span data-copy="multipleLines">Five lines</span>
               </label>
             </fieldset>
             <button class="button demo-button" id="flow-toggle" type="button" aria-controls="demo-scene" aria-describedby="demo-note" data-copy="showFlow">Show flow</button>
@@ -126,7 +177,7 @@
               <svg id="demo-overlay" class="flow-overlay" viewBox="0 0 1000 562.5" preserveAspectRatio="none" aria-hidden="true"></svg>
             </div>
             <figcaption class="demo-caption">
-              <span id="demo-note" data-copy="demoNote">Visual demo · Not a live measurement</span>
+              <span id="demo-note" data-copy="demoNote">Visual demo · Simulated readings</span>
               <span class="demo-legend" aria-hidden="true">
                 <span class="legend-item"><i class="legend-line"></i><span data-copy="legendLine">Reference line</span></span>
                 <span class="legend-item" id="vector-legend" hidden><i class="legend-vector"></i><span data-copy="legendVector">Velocity vector</span></span>
@@ -134,6 +185,7 @@
             </figcaption>
           </figure>
           <p id="demo-status" class="sr-only" role="status"></p>
+          <p id="demo-readings" class="sr-only" hidden></p>
         </div>
       </div>
     </section>

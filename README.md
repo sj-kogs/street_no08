@@ -1,6 +1,6 @@
 # Flow Pick Tablet
 
-태블릿으로 하천과 수로의 표면유속을 측정하는 앱을 소개하는 한·영 홍보 페이지입니다. 웹 데모의 기준선과 벡터는 예시로 그린 시각 요소입니다.
+태블릿으로 하천과 수로의 표면유속을 측정하는 앱을 소개하는 한·영 홍보 페이지입니다. 웹 데모의 벡터 길이와 수치에는 같은 예시 유속 값을 사용합니다.
 
 ## 로컬 실행
 
@@ -11,6 +11,10 @@ python -m http.server 8000 --bind 127.0.0.1
 ```
 
 브라우저에서 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)을 엽니다.
+
+## Vercel 배포
+
+Vercel의 **Add New → Project**에서 GitHub 저장소를 가져옵니다. **Framework Preset**은 **Other**, **Root Directory**는 저장소 루트를 선택하고, **Build Command**는 비워 둡니다. Vercel이 루트의 `index.html`과 정적 자산을 그대로 제공합니다. [Vercel 정적 사이트 배포 설정](https://vercel.com/docs/builds/configure-a-build#skip-build-step)
 
 ## GitHub Pages 배포
 
@@ -39,3 +43,5 @@ python -m http.server 8000 --bind 127.0.0.1
 | `assets/images/river-field.jpg` | 건조한 자갈 둔치에서 태블릿을 든 현장 조사자의 뒷모습. 얕은 청록색 하천과 계곡이 화면 대부분을 차지하는 흐린 아침의 가로형 사진. |
 | `assets/images/river-study.jpg` | 얕은 하천 옆 마른 자갈밭에서 두 대학생이 클립보드와 태블릿을 들고 관찰 기록을 비교하는 자연광 야외 사진. |
 | `assets/images/river-curiosity.jpg` | 건조한 산책길에서 걸음을 멈추고 돌 사이를 흐르는 개울을 내려다보는 사람을 뒤쪽에서 담은 가로형 사진. |
+
+오프닝에 등장하는 `assets/images/leonardo-studies-of-water.jpg`는 레오나르도 다빈치의 〈물의 연구〉 복제 이미지입니다. 사이트의 파일은 SHA-1 해시를 대조해 [위키미디어 공용의 퍼블릭 도메인 표시 파일](https://commons.wikimedia.org/wiki/File:Leonardo_da_vinci,_Studies_of_water.jpg)과 동일한 것을 확인했습니다. 작품 연대는 [왕실 컬렉션의 작품 설명](https://www.rct.uk/collection/912660/studies-of-water)을 따릅니다.
